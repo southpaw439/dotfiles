@@ -1,20 +1,11 @@
-  # Terminal & Shell                                                                                                                                                  
-  brew "git"                                                                                                                                                          
-  brew "gh"                                                                                                                                                           
-  brew "zsh"                                                                                                                                                          
-                                                                                                                                                                      
-  # Development                                                                                                                                                       
-  brew "node"                                                                                                                                                         
-  brew "nvm"                                                                                                                                                          
-                                                                                                                                                                      
-  # Apps                                                                                                                                                              
-  cask "iterm2"                                                                                                                                                       
-  cask "visual-studio-code"                                                                                                                                           
-  cask "cursor"                                                                                                                                                       
-                                                                                                                                                                      
-  # Fonts (optional - good for terminal)                                                                                                                              
-  tap "homebrew/cask-fonts"                                                                                                                                           
-  cask "font-jetbrains-mono-nerd-font"                                                                                                                                           
-
-
-
+brew "gh"
+brew "git"
+brew "node"
+brew "nvm"
+brew "ollama", restart_service: :changed
+brew "poppler"
+brew "zsh"
+cask "cursor"
+cask "font-jetbrains-mono-nerd-font"
+cask "iterm2"
+cask "visual-studio-code"

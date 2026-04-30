@@ -23,9 +23,12 @@
   # Homebrew                                                                                                                                                          
   eval "$(/opt/homebrew/bin/brew shellenv)"                                                                                                                           
                                                                                                                                                                       
-  # Editor                                                                                                                                                            
-  export EDITOR='code'                                                                                                                                                
-                                                                                                                                                                      
+  # Editor
+  export EDITOR='code'
+
+  # Local-only secrets (not committed). See ~/.zshrc.local
+  [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
   # ---- Aliases ----                                                                                                                                                 
                                                                                                                                                                       
   # Shell                                                                                                                                                             
